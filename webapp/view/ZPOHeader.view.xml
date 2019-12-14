@@ -1,0 +1,15 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="sap.m" controllerName="POReport.POReport.controller.ZPOHeader" displayBlock="true">
+	<App id="idAppControl">
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<List noDataText="Drop list items here" id="lt_ekpo" items="{/POHeaderSet}">
+						<items>
+							<StandardListItem type="Navigation" title="PO Number: {Ebeln}" description="PO Type: {Bsart}" id="wa_ekpo" press="GoToEkpo"/>
+						</items>
+					</List>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
